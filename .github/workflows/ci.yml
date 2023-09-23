@@ -6,4 +6,4 @@ jobs:
     build-job:
         runs-on: ubuntu-lastest
         steps:
-            - run: echo "Hello World" 
+            - run: echo "Hello World"
