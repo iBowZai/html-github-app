@@ -10,6 +10,7 @@ on:
 env:
     MY_HOST: '127.0.0.1'
     USER_BY: 'Bow'
+    COMPANY_NAME: 'IT'
 
 jobs:
     build-job:
@@ -17,6 +18,8 @@ jobs:
         env:
             FULLNAME: 'Tipa Za'
         steps:
+            - run: echo ${{ vars.COMPANY_NAME }}
+            - run: echo ${{ env.COMPANY_NAME }}
             - run: echo "My Host is $MY_HOST and $FULLNAME"
             - run: echo "Hello ${{ github.actor }} $FULLNAME"
     
