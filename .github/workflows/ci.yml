@@ -1,6 +1,14 @@
 name: GitHub Actions Demo
 
-on: [push]
+on:
+    push:
+        branches: 
+            - main
+    pull_request: 
+        types:
+            - opened
+        branches: 
+            - '*feature'
 
 jobs:
     build-job:
