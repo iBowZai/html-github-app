@@ -12,5 +12,14 @@ jobs:
     build-job:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Bello World Minion"
-            - run: echo "Bello World Minion"
+            - run: echo "Build job"
+    
+    test-job:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Test job"
+            
+    deploy-job:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Deploy job"
